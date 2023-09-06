@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/moveToFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move to Favorite"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bg"
+            android:text="Quote of the Day"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/halant_bold"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/truthquote"
+            android:textColor="@color/green"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/txtquote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/quote"
+            android:textColor="#F4F4F4"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:drawableRight="@drawable/share"
+            android:drawableTint="#fff"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Share Option"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnfavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add to favorite"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/green"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/heart"
+            />
+
+    </LinearLayout>
+</LinearLayout>
